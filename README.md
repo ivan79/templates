@@ -1,4 +1,4 @@
-# templates
+# Templates
 Templates for start a project
 
 #Generador de Sprites
