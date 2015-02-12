@@ -50,7 +50,7 @@ Subir la carpeta a LIBS
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/libs/font-awesome/css/font-awesome.min.css');
 
 4) Dejar la escructura del header.php (por debajo de div id=page) como sigue:
-
+```
     <div id="page" class="hfeed site">
 		
 	<div class="container">
@@ -71,5 +71,5 @@ Subir la carpeta a LIBS
 	 </header><!-- #masthead -->     
     
 	<div id="content" class="site-content">
-
+```
 5) En footer.php añadir </div> encima del div correspondiente a page
