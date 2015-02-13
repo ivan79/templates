@@ -5,17 +5,19 @@
 1) Descargar Wordpress de la web: http://wordpress.org
 2) Subir el contenido de la carpeta wordpress al ftp
 
-3) Descargar Pods de la web: https://wordpress.org/plugins/pods/
-4) Subir la carpeta pods a la carpeta plugins del ftp
+3) Comprobar que la carpeta /wp-content/uploads tiene permisos 777 (aplicando en todos los subdirectorios). Si no existe, crearla con esos permisos.
 
-5) Subir los plugins wpml-string-translation y sitepress-multilingual-cms (de pago) a la carpeta plugins del ftp
+4) Descargar Pods de la web: https://wordpress.org/plugins/pods/
+5) Subir la carpeta pods a la carpeta plugins del ftp
 
-6) Acceder a /wp-admin/setup-config.php y seguir los pasos (se accede poniendo el dominio directamente)
-7) Rellenar los campos de la base de datos con los recibidos por mail. En Table Prefix poner wp_nombredeproyecto_ y acabado en _
+6) Subir los plugins wpml-string-translation y sitepress-multilingual-cms (de pago) a la carpeta plugins del ftp
+
+7) Acceder a /wp-admin/setup-config.php y seguir los pasos (se accede poniendo el dominio directamente)
+8) Rellenar los campos de la base de datos con los recibidos por mail. En Table Prefix poner wp_nombredeproyecto_ y acabado en _
 Si al hacer submit no tiene acceso de escritura a wp-config.php, renombrar wp-config-sample.php a wp-config.php y pegar lo que sale en el asistente. Subir el fichero y seguir con el asistente
-8) Rellenar los datos de wordpress 
+9) Rellenar los datos de wordpress 
 
-9) Loginarse y activar los plugins (pods, wpml-string-translation y sitepress-multilingual-cms)
+10) Loginarse y activar los plugins (pods, wpml-string-translation y sitepress-multilingual-cms)
 
 # Customización del theme
 
@@ -49,7 +51,7 @@ Subir la carpeta a LIBS
 - Editar el fichero functions.php y añadir a la rutina nombredeproyecto_scripts la línea:
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/libs/font-awesome/css/font-awesome.min.css');
 
-4) Dejar la escructura del header.php (por debajo de div id=page) como sigue:
+4) Dejar la escructura del header.php (por debajo de div id=page) como sigue (CAMBIAR @NOMBREPROYECTO por el que toque):
 ```
     <div id="page" class="hfeed site">
 		
@@ -63,7 +65,7 @@ Subir la carpeta a LIBS
     <nav class="navbar navbar-default">
 
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'telfast' ); ?></button>
+                <button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', '@NOMBREPROYECTO' ); ?></button>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </nav><!-- #site-navigation -->
 
@@ -73,3 +75,14 @@ Subir la carpeta a LIBS
 	<div id="content" class="site-content">
 ```
 5) En footer.php añadir </div> encima del div correspondiente a page
+
+6) Acceder a Appearance / Customize / Static Front Page y elegir "A static page" y Front page "Sample page". Grabar cambios.
+
+7) 
+
+8) Si se crea un tipo de post especial mediante Pods, acceder a Pods Admin / Advanced Options y elegir:
+
+- En User Capability: page
+- En Rewrite with Front: <desmarcar>
+- En Supports: 	Featured Image <marcar>
+				Excerpt <marcar>
