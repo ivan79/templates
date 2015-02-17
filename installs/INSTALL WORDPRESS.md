@@ -78,9 +78,7 @@ Subir la carpeta a LIBS
 
 6) Acceder a Appearance / Customize / Static Front Page y elegir "A static page" y Front page "Sample page". Grabar cambios.
 
-7) 
-
-8) Si se crea un tipo de post especial mediante Pods, acceder a Pods Admin / Advanced Options y elegir:
+7) Si se crea un tipo de post especial mediante Pods, acceder a Pods Admin / Advanced Options y elegir:
 
 - En User Capability: page
 - En Rewrite with Front: <desmarcar>
