@@ -5,10 +5,12 @@ PAGES / HEADER / FOOTER
 
 2) Las líneas sustituidas en el paso anterior deben ir copiadas a un fichero TXT poniendo el fichero PHP del que salen 
 Ejemplo:
+```
 #header.php
 Idioma 
 Contacto
 Área clientes
+```
 
 AL REEMPLAZAR LAS CADENAS, EN CASO DE NO TENER FICHERO .PO NI .MO, LOS VALORES QUE SE MOSTRARAN SERAN LOS DEL PRIMER PARAMETRO DEL ECHO
 
@@ -27,10 +29,11 @@ AL REEMPLAZAR LAS CADENAS, EN CASO DE NO TENER FICHERO .PO NI .MO, LOS VALORES Q
 9) Editar el fichero .po con un editor de texto (textmate). Se pueden eliminar todas las entradas (respetar la cabecera)
 
 10) Incluir cada entrada del fichero de texto obtenido en el paso 1 y 2 con el siguiente formato:
+```
 #header.php
 msgid "Idioma"
 msgstr "Idioma"
-
+```
 11) Guardar el fichero .po
 
 12) Abrir el fichero con Poedit y guardar
