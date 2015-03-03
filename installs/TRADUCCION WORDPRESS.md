@@ -18,7 +18,7 @@ AL REEMPLAZAR LAS CADENAS, EN CASO DE NO TENER FICHERO .PO NI .MO, LOS VALORES Q
 
 4) Abrir el Poedit y hacer nuevo desde fichero POT
 
-5) Seleccionar el fichero POT que hay en la carpeta languages del tema generado por underscore
+5) Seleccionar el fichero POT que hay en la carpeta languages del tema generado por underscore (si no existen los ficheros .po ni .mo)
 
 6) Configurar para que genere automaticamente el .mo al guardar
 
