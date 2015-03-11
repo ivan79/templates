@@ -24,6 +24,8 @@
 
 6) Copiar el favicon.ico a la raiz de la web.
 
+7) Borrar cualquier fichero robots.txt que haya en la raiz.
+
 # Dentro del Admin (una vez revisado que todo funciona)
 
 1) Ir a WPML > Localización de temas y plugins y desactivar la opción Traducir utilizando archivos .mo > Carga el archivo .mo, IMPORTANTE, guardar y volver a ponerlo como estaba (esto es un bug de WPML).

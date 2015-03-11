@@ -12,6 +12,12 @@
 
 6) Subir los plugins wpml-string-translation y sitepress-multilingual-cms (de pago) a la carpeta plugins del ftp
 
+6.5) Subir el plugin https://wordpress.org/plugins/password-protected/ y activar con un password (no activar admin ni el resto de opciones)
+6.6) Desactivar la indexación en wordpress (Ajustes / Lectura/ Disuade a los motores de búsqueda de indexar este sitio)
+6.7) Inluir en la raiz del servidor el fichero robots.txt con el siguiente contenido:
+User-agent: *
+Disallow: /
+
 7) Acceder a /wp-admin/setup-config.php y seguir los pasos (se accede poniendo el dominio directamente)
 8) Rellenar los campos de la base de datos con los recibidos por mail. En Table Prefix poner wp_nombredeproyecto_ y acabado en _
 Si al hacer submit no tiene acceso de escritura a wp-config.php, renombrar wp-config-sample.php a wp-config.php y pegar lo que sale en el asistente. Subir el fichero y seguir con el asistente
