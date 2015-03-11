@@ -24,7 +24,10 @@
 
 6) Copiar el favicon.ico a la raiz de la web.
 
-7) Borrar cualquier fichero robots.txt que haya en la raiz.
+7) Modificar el fichero robots.txt que haya en la raiz para que indexe:
+User-agent: *
+Disallow:
+
 
 # Dentro del Admin (una vez revisado que todo funciona)
 
