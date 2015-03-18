@@ -1,12 +1,16 @@
 # Traducción de un Wordpress
 
+0) Comprobar que está activado el check en WPML: 
+WPML / LOCALIZACION DE TEMAS Y PLUGINS
+CARGAR EL ARCHIVO .MO DEL TEMA DE MANERA AUTOMATICA UTILIZANDO 'LOAD_THEME_TEXTDOMAIN. Introducir el valor de textdomain Y PONER EL NOMBRE DE PROYECTO
+
 1) Substituir las cadenas fijas de cada php por llamadas: <?php echo __(“<LITERAL>”, “<NOMBRE_DE_PROYECTO>”); ?> 
 PAGES / HEADER / FOOTER
 
 2) Las líneas sustituidas en el paso anterior deben ir copiadas a un fichero TXT poniendo el fichero PHP del que salen 
 Ejemplo:
 ```
-#header.php
+#: header.php
 Idioma 
 Contacto
 Área clientes
@@ -30,7 +34,7 @@ AL REEMPLAZAR LAS CADENAS, EN CASO DE NO TENER FICHERO .PO NI .MO, LOS VALORES Q
 
 10) Incluir cada entrada del fichero de texto obtenido en el paso 1 y 2 con el siguiente formato:
 ```
-#header.php
+#: header.php
 msgid "Idioma"
 msgstr "Idioma"
 ```
