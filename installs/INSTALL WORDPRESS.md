@@ -25,6 +25,8 @@ Si al hacer submit no tiene acceso de escritura a wp-config.php, renombrar wp-co
 
 10) Loginarse y activar los plugins (pods, wpml-string-translation y sitepress-multilingual-cms)
 
+11) Activar el plugin Cookie Law Info y poner "Use Show Again Tab?" a NO
+
 # Customización del theme
 
 1) Generar el tema base con http://underscores.me/ poniendo el nombre del proyecto
