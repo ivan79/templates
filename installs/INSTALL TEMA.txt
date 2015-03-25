@@ -1,0 +1,6 @@
+# Instalación de un tem
+
+1) Subir el tema a la carpeta themes del ftp
+2) En Tools / Import / Wordpress seleccionar el xml que viene con el tema y marcar Download and import attachments
+EN ALGUN PUNTO PREGUNTARA BEGIN PLUGIN INSTALLATION. DECIR QUE SI
+3) Introducir los datos del FTP para poder descargar
