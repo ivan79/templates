@@ -1,0 +1,7 @@
+Generar Sitemap:
+
+1) Acceder a la web http://www.web-site-map.com/ e introducir la url del site
+2) Descargar el fichero sitemap.xml
+3) Subir el fichero al ftp (carpeta html)
+4) Acceder a Webmaster Tools https://www.google.com/webmasters/tools/home?hl=en apartado Crawl / Sitemaps y ADD/TEST SITEMAP
+5) Introducir el fichero sitemap.xml en el campo y hacer un Test y un Submit
