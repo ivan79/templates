@@ -1,0 +1,7 @@
+1) bajar la libreria que se quiere instalar y entrar en la carpeta.
+2) desde terminal, ejecutar: curl -sS https://getcomposer.org/installer | php
+3) ejecutar: php composer.phar install (se creará una carpeta VENDOR)
+4) subir la carpeta vendor y src al mismo nivel a Libs del server
+5) para hacer el include, utilizar la llamada a autoload.php. Ejemplo: 			require_once 'libs/instagram/Instagram-PHP-API-master/vendor/autoload.php';
+6) No olvidar el posible use. Ejemplo: use MetzWeb\Instagram\Instagram;
+
